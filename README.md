@@ -1,4 +1,4 @@
-## AUTO IZINKAN ROOT
+## IZINKAN ROOT
 ```ssh
 sudo nano /etc/ssh/sshd_config
 ```
