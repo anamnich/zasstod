@@ -1,15 +1,18 @@
 ## AUTO IZINKAN ROOT
-```sh
-sudo su
+```ssh
+sudo nano /etc/ssh/sshd_config
 ```
-```sh
-git clone https://github.com/anamnich/auto-root && cd auto-root && mv sshd_config /etc/ssh/
+```To enable password :
+PasswordAuthentication yes
+PermitRootLogin yes
+PubkeyAuthentication no
 ```
-```sh
-service ssh reload
+```Setting passwd root :
+sudo passwd root
 ```
-
-
+```Restart ssh :
+sudo systemctl restart sshd && sudo systemctl restart ssh
+```
 
 ## UPDATE & UPGRADE
 ```sh
