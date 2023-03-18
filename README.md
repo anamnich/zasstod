@@ -23,7 +23,7 @@ bash <(curl https://pterodactyl-installer.se)
 ```
 #2
 ```sh
-bash <(curl https://raw.githubusercontent.com/anamnich/zasstod/main/install-wings.sh)
+bash <(curl https://raw.githubusercontent.com/anamnich/zas/main/install-wings.sh)
 ```
 
 ## TEMA
