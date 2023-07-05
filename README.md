@@ -70,11 +70,11 @@ sudo apt update -y && sudo apt upgrade -y
 ```
 
 ## PANEL & WINGS
-#1
+#PANEL
 ```sh
 bash <(curl https://pterodactyl-installer.se)
 ```
-#2
+#WINGS
 ```sh
 bash <(curl https://raw.githubusercontent.com/anamnich/zas/main/install-wings.sh)
 ```
