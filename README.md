@@ -1,3 +1,9 @@
+## CMD RUN VPS :
+```
+sudo apt update && cd ~ && curl -sL https://deb.nodesource.com/setup_17.x -o /tmp/nodesource_setup.sh
+- sudo bash /tmp/nodesource_setup.sh && sudo apt install nodejs && sudo apt install git && sudo add-apt-repository ppa:jonathonf/ffmpeg-4
+- sudo apt -y  install ffmpeg && sudo apt -y  install webp && sudo apt -y  install imagemagick
+```
 ## INSTALL COMMAND
 ```apt update```
 ```cd /var/www/pterodactyl```
@@ -21,19 +27,16 @@ sudo systemctl restart sshd && sudo systemctl restart ssh
 
 ## CLEAR
 ```apt-get update && apt-get upgrade -y
-ls
-git clone https://github.com/SFams21/clear-cache-vps.git
-cd clear-cache-vps
-chmod +x cleaner-tools.sh
-sh cleaner-tools.sh
-```
-```echo 1 > /proc/sys/vm/drop_caches
-echo 2 > /proc/sys/vm/drop_caches
-echo 3 > /proc/sys/vm/drop_caches
-script otomatis flush cache:
-
-# crontab -e
-0 * * *  * sync; echo 3 > /proc/sys/vm/drop_caches
+```ls```
+```git clone https://github.com/SFams21/clear-cache-vps.git```
+```cd clear-cache-vps```
+```chmod +x cleaner-tools.sh```
+```sh cleaner-tools.sh```
+```echo 1 > /proc/sys/vm/drop_caches```
+```echo 2 > /proc/sys/vm/drop_caches```
+```echo 3 > /proc/sys/vm/drop_caches```
+```script otomatis flush cache:```
+```echo 3 > /proc/sys/vm/drop_caches```
 perintah diatas akan menjalankan perintah sync; echo 3 > /proc/sys/vm/drop_caches setiap 1 jam
 
 untuk memeriksa cache memory
