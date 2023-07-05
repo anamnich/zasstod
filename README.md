@@ -1,3 +1,8 @@
+## INSTALL COMMAND
+```apt update```
+```cd /var/www/pterodactyl```
+```yarn build:production```
+```php artisan optimize:clear```
 ## IZINKAN ROOT
 ```ssh
 sudo nano /etc/ssh/sshd_config
