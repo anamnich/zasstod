@@ -62,7 +62,7 @@ echo 2 > /proc/sys/vm/drop_caches
 echo 3 > /proc/sys/vm/drop_caches
 ```
 ```
-echo 3 > /proc/sys/vm/drop_caches
+crontab -e 0 * * *  * sync; echo 3 > /proc/sys/vm/drop_caches
 ```
 ## UPDATE & UPGRADE
 ```sh
