@@ -3,18 +3,6 @@
 ```cd /var/www/pterodactyl```
 ```yarn build:production```
 ```php artisan optimize:clear```
-```echo 1 > /proc/sys/vm/drop_caches
-echo 2 > /proc/sys/vm/drop_caches
-echo 3 > /proc/sys/vm/drop_caches
-script otomatis flush cache:
-
-# crontab -e
-0 * * *  * sync; echo 3 > /proc/sys/vm/drop_caches
-perintah diatas akan menjalankan perintah sync; echo 3 > /proc/sys/vm/drop_caches setiap 1 jam
-
-untuk memeriksa cache memory
-
-free -m```
 ## IZINKAN ROOT
 ```ssh
 sudo nano /etc/ssh/sshd_config
@@ -39,6 +27,18 @@ cd clear-cache-vps
 chmod +x cleaner-tools.sh
 sh cleaner-tools.sh
 ```
+```echo 1 > /proc/sys/vm/drop_caches
+echo 2 > /proc/sys/vm/drop_caches
+echo 3 > /proc/sys/vm/drop_caches
+script otomatis flush cache:
+
+# crontab -e
+0 * * *  * sync; echo 3 > /proc/sys/vm/drop_caches
+perintah diatas akan menjalankan perintah sync; echo 3 > /proc/sys/vm/drop_caches setiap 1 jam
+
+untuk memeriksa cache memory
+
+free -m```
 ## UPDATE & UPGRADE
 ```sh
 sudo apt update -y && sudo apt upgrade -y
