@@ -5,10 +5,18 @@ sudo apt update && cd ~ && curl -sL https://deb.nodesource.com/setup_17.x -o /tm
 - sudo apt -y  install ffmpeg && sudo apt -y  install webp && sudo apt -y  install imagemagick
 ```
 ## INSTALL COMMAND
-```apt update```
-```cd /var/www/pterodactyl```
-```yarn build:production```
-```php artisan optimize:clear```
+```
+apt update
+```
+```
+cd /var/www/pterodactyl
+```
+```
+yarn build:production
+```
+```
+php artisan optimize:clear
+```
 ## IZINKAN ROOT
 ```ssh
 sudo nano /etc/ssh/sshd_config
