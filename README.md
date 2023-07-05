@@ -19,6 +19,14 @@ sudo passwd root
 sudo systemctl restart sshd && sudo systemctl restart ssh
 ```
 
+## CLEAR
+```apt-get update && apt-get upgrade -y
+ls
+git clone https://github.com/SFams21/clear-cache-vps.git
+cd clear-cache-vps
+chmod +x cleaner-tools.sh
+sh cleaner-tools.sh
+```
 ## UPDATE & UPGRADE
 ```sh
 sudo apt update -y && sudo apt upgrade -y
@@ -40,4 +48,4 @@ Install script:
 bash <(curl https://raw.githubusercontent.com/anamnich/Utama/main/install.sh)
 ```
 
-## ZASSTDR OFFICIAL
+## ZASSVCJ OFFICIAL
